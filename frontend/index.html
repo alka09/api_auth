@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <title>Login form</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+<div class="alerts-container">
+
+  <div id="login-success" class="alert alert-success alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Success!</strong> Login Successful!
+  </div>
+  <div id="login-incorrect" class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Whoops!</strong> Incorrect Login or Password.
+  </div>
+
+  <div id="register-not-match" class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Whoops!</strong> Passwords didn't match in both fields.
+  </div>
+  <div id="register-preregistered" class="alert alert-info alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Hey! it's you!</strong> You are already registered!
+  </div>
+  <div id="register-success" class="alert alert-success alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Success!</strong> User registered successfully!
+  </div>
+
+
+  <div id="generic-error" class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Error!</strong> Opps! Something Went Wrong!
+  </div>
+  <div id="generic-empty" class="alert alert-info alert-dismissible">
+    <a href="#" class="close" aria-label="close">&times;</a>
+    <strong>Warning!</strong> All The Fields Are Required.
+  </div>
+
+</div>
+<!-- alert container ends -->
+
+<!-- main wrapper of both forms -->
+<div class="wrapper">
+  <div class="form">
+
+    <!-- login form -->
+    <form class="login-form">
+      <h2>Login</h2>
+      <input class="username" type="text" placeholder="username" />
+      <input class="password" type="password" placeholder="Password" />
+
+      <div class="extras">
+        <div class="remember-me">
+          <input type="checkbox" />
+          <span>Remember me</span>
+        </div>
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+
+      <button id="btn_login">Login</button>
+      <p class="message">Not Registered? <a href="#">Register</a>
+      </p>
+    </form>
+    <!-- login form ends -->
+
+    <!-- register form -->
+    <form class="register-form">
+      <h2>Register</h2>
+      <input class="username" type="text" placeholder="Username" />
+      <input class="password" type="password" placeholder="Password" />
+      <input class="confirm-password" type="password" placeholder="Confirm password" />
+      <button id="btn_register">Register</button>
+      <p class="message">Already Registered? <a href="#"> Login</a>
+      </p>
+    </form>
+    <!-- register form ends -->
+  </div>
+</div>
+</body>
+
+<!-- Main js file -->
+<script src="js/main.js"></script>
+
+</html>
